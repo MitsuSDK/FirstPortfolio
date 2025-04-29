@@ -5,8 +5,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
-  background: #0a0a0a;
-  color: #f3f4f6;
+  background: #000000;
+  color: #4830e4;
 }
 
 @layer utilities {
