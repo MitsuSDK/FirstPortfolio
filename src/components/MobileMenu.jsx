@@ -70,3 +70,9 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     </div>
   );
 };
+import PropTypes from 'prop-types';
+
+MobileMenu.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+  setMenuOpen: PropTypes.func.isRequired,
+};
