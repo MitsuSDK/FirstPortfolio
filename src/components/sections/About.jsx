@@ -17,7 +17,7 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#b823c0] to-[#f100ff] bg-clip-text text-transparent text-center">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#8f3295] to-[#f100ff] bg-clip-text text-transparent text-center">
             {" "}
             About Me
           </h2>
@@ -50,7 +50,7 @@ export const About = () => {
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-pink-500/10 text-[#b90bc3] py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
+                      className="bg-purple-500/10 text-[#6812e3] py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
                                     hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition
                     "
                     >
