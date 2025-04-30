@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
-console.log("SERVICE ID:", import.meta.env.VITE_SERVICE_ID);
+console.log(import.meta.env);
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
+    title: ""
   });
 
   const handleSubmit = (e) => {
@@ -32,6 +33,7 @@ export const Contact = () => {
   };
 
   return (
+
     <section
       id="contact"
       className="min-h-screen flex items-center justify-center py-20"
@@ -69,6 +71,21 @@ export const Contact = () => {
                 placeholder="example@gmail.com"
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
+                }
+              />
+            </div>
+
+            <div className="relative">
+            <input
+                type="text"
+                id="title"
+                name="title"
+                required
+                value={formData.title}
+                className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                placeholder="Subject..."
+                onChange={(e) =>
+                  setFormData({ ...formData, title: e.target.value })
                 }
               />
             </div>
