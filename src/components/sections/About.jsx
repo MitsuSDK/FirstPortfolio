@@ -86,7 +86,7 @@ export const About = () => {
                   (2023-2025)
                 </li>
                 <li>
-                  Relevant Course: CS50 python (On going)
+                  <strong>Relevant Course:</strong> CS50 python (On going)
                 </li>
               </ul>
             </div>
@@ -94,10 +94,9 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Intern at Gainde 2000, Dakar (june 2024 - July 2024){" "}
-                  </h4>
+                  <li>
+                    <strong>Intern at Gainde 2000</strong>, Dakar (june 2024 - July 2024)
+                  </li>
                   <p>
                   -Wrote technical documentation for JavaScript following.</p>
                   <p>-Assisted in the preparation and representation of the company at major tech events (SIPEN 2024, Senegal Job Forum)
@@ -106,10 +105,10 @@ export const About = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold">
+                  <li>
                     {" "}
-                    Solo managing an e-commerce business{" "}
-                  </h4>
+                    <strong>Solo managing an e-commerce business</strong>{" "}
+                  </li>
                   
                 </div>
               </div>
