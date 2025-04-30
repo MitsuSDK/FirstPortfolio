@@ -17,7 +17,7 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#8f3295] to-[#f100ff] bg-clip-text text-transparent text-center">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-[#6812e3] to-[#f100ff] bg-clip-text text-transparent text-center">
             {" "}
             About Me
           </h2>
