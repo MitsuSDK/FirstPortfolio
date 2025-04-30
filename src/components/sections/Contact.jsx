@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
-
+console.log("SERVICE ID:", import.meta.env.VITE_SERVICE_ID);
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -20,10 +20,15 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
+        console.log("SUCCESS!", result.text);
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch((error) => 
+        {
+          console.error("EmailJS ERROR:", error)
+          alert("Oops! Something went wrong. Please try again.")
+        });
   };
 
   return (
